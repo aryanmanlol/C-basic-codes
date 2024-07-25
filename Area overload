@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+class overload{
+    public:
+        int area(int l,int b){
+            return 2*(l+b);
+        }
+        int area(int r){
+            return 2*3.14*r*r;
+        }
+        double area(float b, float h){
+            return 0.5*b*h;
+        }
+    };
+
+int main(){
+    overload s1;
+    cout<<"area of rectangle: "<<s1.area(2,3)<<endl;
+    cout<<"area of circle: "<< s1.area(2)<<endl;
+    cout<<"area of triangle: "<<s1.area(2,3)<<endl;
+    
+    return 0;
+}
+
+
