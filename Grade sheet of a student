@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+class student{
+    public:
+    string name;
+    int roll_no;
+    int phy;
+    int chem;
+    int calc;
+    float score;
+    
+    void getdata(){
+        cout<<"enter student name: ";
+        getline(cin,name);
+        cout<<"enter student roll number: ";
+        cin>>roll_no;
+        cout<<"enter physics marks: ";
+        cin>>phy;
+        cout<<"enter chemistry marks: ";
+        cin>>chem;
+        cout<<"enter calculus marks: ";
+        cin>>calc;
+    }
+    void avg(){
+        score=(phy+calc+chem)/3;
+        if(score<40)
+        cout<<"FAIL:("<<endl;
+        else
+        cout<<"PASS!"<<endl;
+    }
+};
+int main()
+{
+    int num=10;
+    student s[num];
+    
+    for(int i=1;i<11;i++){
+        cout<<"enter data for student "<<i<<": "<<endl;
+        s[i].getdata();
+        s[i].avg();
+    }
+
+    return 0;
+}
