@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+struct student{
+    int s1;
+    int s2;
+    int s3;
+    int s4;
+    int s5;
+};
+
+int main()
+{
+    int n;
+    student s[20];
+    cout<<"enter number of students";
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cout<<"\nfor student number "<<i<<" :";
+        cout<<"\nenter marks for s1: ";
+        cin>>s[i].s1;
+        cout<<"enter marks for s2: ";
+        cin>>s[i].s2;
+        cout<<"enter marks for s3: ";
+        cin>>s[i].s3;
+        cout<<"enter marks for s4: ";
+        cin>>s[i].s4;
+        cout<<"enter marks for s5: ";
+        cin>>s[i].s5;
+        
+        int avg=(s[i].s1+s[i].s2+s[i].s3+s[i].s4+s[i].s5)/5;
+        cout<<"\naverage marks are: "<<avg;
+    }
+    
+
+    return 0;
+}
