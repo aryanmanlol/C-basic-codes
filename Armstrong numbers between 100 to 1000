@@ -1,0 +1,21 @@
+int main()
+{
+    cout<<"armstrong numbers are: "<<endl;
+    for(int i=100;i<=999;i++){
+        int j,sum=0;
+        
+        for(int j=i;j>0;){
+        
+        int x=j%10;
+        int z=pow(x,3);
+        sum+=z;
+        j/=10;
+        
+        if(sum==i){
+            cout<<sum<<endl;
+        }
+        }
+    }
+    
+    return 0;
+}
