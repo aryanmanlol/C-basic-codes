@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    
+ int arr[]={2,5,7,9};
+ int greater=arr[0];
+ char ch;
+ 
+ cout<<"enter your choice";
+ cin>>ch;
+ 
+ switch(ch){
+ 
+ case'a':
+ 
+ 
+ for(int i=0;i<4;i++){
+     if(arr[i]>greater){
+         greater=arr[i];
+ }
+ }
+ cout<<"greatest digit is: "<<greater;
+ break;
+ 
+ 
+ 
+ case'b':
+ 
+ int avg=(arr[0]+arr[1]+arr[2]+arr[3])/4;
+ 
+ 
+ cout<<"avg value is:"<<avg;
+}
+    return 0;
+}
+
+
