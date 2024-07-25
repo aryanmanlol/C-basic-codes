@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int s;
+    cout<<"enter size of array: ";
+    cin>>s;
+    int a1[s]; 
+    int a2[s];
+    
+    cout<<"enter elements of array: ";
+    for (int i = 0; i < 5; ++i) 
+    {
+    cin >> a1[i];
+    }
+    
+    for (int i=0;i<s;i++)
+    {
+    a2[i]=a1[i];
+    }
+    cout<<"copied array is: "; 
+    for (int i=0;i<s;i++)
+    {
+    cout<<a2[i]<<",";
+    }
+    return 0;
+}
