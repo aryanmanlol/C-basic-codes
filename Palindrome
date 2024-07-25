@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    char str[100];
+    cout<<"enter a string: ";
+    cin>>str;
+    int len= strlen(str);
+    
+    char p;
+    char *ptr=str+len-1;
+    cout<<"reversed string is: ";
+    while(ptr>=str){
+        cout<<*ptr;
+        ptr--;
+    }p=*ptr;
+    int c=strcmp(str,p);
+    cout<<endl<<c;
+    if(c==0){
+        cout<<"\npalindrome";
+    }
+    else{
+        cout<<"\nnot palindrome";
+    }
+
+    return 0;
+}
