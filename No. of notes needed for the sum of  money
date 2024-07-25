@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,a,b,c,d,e,f;
+    cout<<"enter a sum of money: ";
+    cin>>n;
+    
+    a=n/100;
+    cout<<"\nno. of Rs.100 notes: "<<a;
+    n=n%100;
+    
+    if(n!=0){
+        b=n/50;
+        cout<<"\nno. of Rs.50 notes: "<<b;
+    n=n%50;
+    
+    if(n!=0){
+        c=n/10;
+        cout<<"\nno. of Rs.10 notes: "<<c;
+    n=n%10;
+    
+    if(n!=0){
+        d=n/5;
+        cout<<"\nno. of Rs.5 notes: "<<d;
+    n=n%5;
+    
+    if(n!=0){
+        e=n/2;
+        cout<<"\nno. of Rs.2 notes: "<<e;
+    n=n%2;
+    
+    if(n!=0){
+        f=n/1;
+        cout<<"\nno. of Rs.1 notes: "<<f;
+    }}}}}
+    cout<<"\nTotal number of notes needed: "<<a+b+c+d+e+f;
+
+    return 0;
+}
