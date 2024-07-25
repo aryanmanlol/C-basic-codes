@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    
+    int n,p;
+     
+     cout<<"enter the no";
+     cin>>n;
+     
+    p=n/2;
+    
+    for(int i=2;i<p;i++)
+    {
+        
+        if(n%i==0)
+        
+    
+    
+    
+    cout<<"prime nahi hai";
+    
+    
+    else
+    
+    cout<<"prime hai";
+        
+        break;
+    }
+  return 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
